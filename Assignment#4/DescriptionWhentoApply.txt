@@ -1,0 +1,9 @@
+
+Description  when to apply Observer  design Pattern
+
+
+It's not a common situation but there are cases when a there are many observers that need to observe more than one subject.
+ In this case the observer need to be notified not only about the change, 
+but also which is the subject with the state changed. 
+This can be realized very simple by adding to the subjects reference in the update notification method. 
+The subject will pass a reference to itself(this) to the when notify the observer.
